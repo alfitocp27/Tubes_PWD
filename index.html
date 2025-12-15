@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apotek Online - Beranda</title>
+    <link rel="stylesheet" href="assets/css/user.css">
+</head>
+<body>
+    <!-- Header sama persis -->
+    <header>
+        <div class="navbar">
+            <div class="navbar-content">
+                <h1>Selamat Datang Di Atmapotek</h1>
+                <div class="navbar-links">
+                    <a href="index.html">Dashboard</a>
+                    <a href="auth/login.php">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="welcome-banner">
+            <h2>Selamat Datang di Apotek Online!</h2>
+            <p>Temukan obat dan produk kesehatan yang Anda butuhkan dengan mudah dan cepat.</p>
+        </div>
+        
+        <div class="filter-section">
+            <form style="display: flex; gap: 15px; width: 100%; flex-wrap: wrap;">
+                <input type="text" name="search" placeholder="Cari obat..." id="searchInput">
+                
+                <select name="category" id="categoryFilter">
+                    <option value="">Semua Kategori</option>
+                    <option value="Obat Bebas">Obat Bebas</option>
+                    <option value="Obat Bebas Terbatas">Obat Bebas Terbatas</option>
+                    <option value="Obat Keras">Obat Keras</option>
+                    <option value="Suplemen">Suplemen</option>
+                    <option value="Obat Herbal">Obat Herbal</option>
+                </select>
+                
+                <button type="button">Filter</button>
+                <button type="button" style="padding: 10px 20px; background: #ccc; color: #333; border: none; border-radius: 5px; cursor: pointer;">Reset</button>
+            </form>
+        </div>
+        
+        <div class="medicine-grid" id="medicineGrid">
+            <!-- Data obat akan di-render oleh JavaScript -->
+        </div>
+    </div>
+    
+    <!-- Script dihapus, halaman ini hanya landing page statis -->
+</body>
+</html>
